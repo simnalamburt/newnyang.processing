@@ -15,7 +15,7 @@ class Maze {
   float txt = 30;
 
   int boxes = 0;
-  int life;
+  int life = 3;
   int intNum;
   int modulo;
 
@@ -115,8 +115,6 @@ class Maze {
     text("Number of Boxes Collected : " + boxes, x1, y6);
     fill(255);
     text("Number of Lives : " + life, x1, y7);
-
-    life = 3;
 
     if(life == 0) {
       noLoop();
