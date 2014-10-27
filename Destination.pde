@@ -32,11 +32,7 @@ class Destination {
       constrain(bx, offset, offset + size * block - block/2);
       constrain(by, offset, offset + size * block - block/2);
 
-      if((bx-offset % block/2) == 0 && (by-offset) % block/2 == 0) {
-        dHandle(true);
-      } else {
-        dHandle(false);
-      }
+      dHandle( (bx-offset % block/2) == 0 && (by-offset) % block/2 == 0 );
     }
   }
 
