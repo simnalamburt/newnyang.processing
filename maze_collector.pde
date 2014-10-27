@@ -1,7 +1,7 @@
 Maze m;
 Destination d;
 Player p;
-boolean right, left, up, down, isDown;
+boolean right, left, up, down;
 
 void setup() {
   smooth();
